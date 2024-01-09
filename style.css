@@ -37,18 +37,18 @@ body {
     text-decoration: none; /* Removes the purple link underscore */
 }
 
-/* ****************** PROJECTS ********************
+/* ************ MAIN COLUMNS/ROWS *****************
  * Contains the various projects to showcase onto
  * the profile.
  * ************************************************/
- .project {
+ .main-column {
     float: left;
     width: 50%;
     padding: 15px;
  }
 
 /* Clear floats after the columns */
- .projects::after {
+ .main-row::after {
     content: "";
     display: table;
     clear: both;
@@ -57,7 +57,7 @@ body {
  /* Makes the different projects stack up on
     each other instead of next to each other */
  @media screen and (max-width: 600px) {
-    .project {
+    .side-column, .main-column {
         width: 100%;
     }
  }
