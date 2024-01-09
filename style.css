@@ -12,3 +12,15 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+.top-navigation-link {
+    float: left;
+    display: block;
+
+    color: white;
+
+    text-align: center;
+    padding: 14px 16px;
+
+    text-decoration: none; /* Removes the purple link underscore */
+}
