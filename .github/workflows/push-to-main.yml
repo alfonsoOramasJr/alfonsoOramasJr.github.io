@@ -9,16 +9,18 @@ jobs:
   merge_to_main:
     runs-on: ubuntu-latest
 
+    outputs:
+      steps: ${{ toJson(steps) }}
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Create Pull Request
+      id: create_pr
       uses: actions/github-script@v5
       with:
         script: |
-          console.log(JSON.stringify(context, null, 2)); // Log the entire context
-    
           const pr = await context.github.pulls.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
@@ -27,20 +29,23 @@ jobs:
             base: 'main',
             changes: [],
           });
-    
+
           console.log(`Pull request created: ${pr.data.html_url}`);
-    
+
+          // Set output for the next step
+          return { pull_request_number: pr.data.number };
+
     - name: Merge Pull Request
       uses: actions/github-script@v5
       with:
         script: |
-          console.log(JSON.stringify(context, null, 2)); // Log the entire context
-    
+          // Get the output from the previous step
+          const prNumber = parseInt(steps.create_pr.outputs.pull_request_number);
+
           await context.github.pulls.merge({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            pull_number: pr.data.number,
+            pull_number: prNumber,
           });
-    
+
           console.log(`Pull request merged successfully.`);
-    
