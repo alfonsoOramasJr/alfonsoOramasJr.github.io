@@ -15,6 +15,10 @@ body {
     background-color: whitesmoke;
 }
 
+.top-navigation {
+    overflow: hidden;
+    background-color: black;
+}
 .top-navigation-link {
     float: left;
     display: block;
