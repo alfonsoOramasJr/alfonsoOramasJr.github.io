@@ -10,6 +10,6 @@ and the LinkedIn navigation link should lead you to my LinkedIn profile.
 
 ### Projects section
 This section will contain information on the projects that we are working on, such as the
-vertical landing project, or the smart home automation project.
+vertical landing project, or the smart home automation project, and the tecnologies used.
 
 Note that there should be visuals, i.e. images in place to showcase some of the work.
