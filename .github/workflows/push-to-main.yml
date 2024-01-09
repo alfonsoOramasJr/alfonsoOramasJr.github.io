@@ -17,9 +17,7 @@ jobs:
       uses: actions/github-script@v5
       with:
         script: |
-          const github = context.github;
-
-          const pr = await github.pulls.create({
+          const pr = await context.github.pulls.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
             title: 'Merge development to main',
@@ -27,19 +25,18 @@ jobs:
             base: 'main',
             changes: [],
           });
-
+    
           console.log(`Pull request created: ${pr.data.html_url}`);
-
+    
     - name: Merge Pull Request
       uses: actions/github-script@v5
       with:
         script: |
-          const github2 = context.github;
-
-          await github2.pulls.merge({
+          await context.github.pulls.merge({
             owner: context.repo.owner,
             repo: context.repo.repo,
             pull_number: pr.data.number,
           });
-
+    
           console.log(`Pull request merged successfully.`);
+    
