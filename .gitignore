@@ -1,3 +1,0 @@
-## Ignore GitHub Actions workflow files and folders
-.github/
-*.yml
