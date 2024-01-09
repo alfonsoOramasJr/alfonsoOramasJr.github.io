@@ -42,7 +42,7 @@ body {
 
     text-decoration: none; /* Removes the purple link underscore */
 }
-.top-navigation-link:hover {
+.top-navigation-link:hover, .top-navigation-link:active {
     background-color: white;
     color: black;
 }
