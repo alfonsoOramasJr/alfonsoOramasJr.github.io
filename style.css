@@ -8,8 +8,7 @@ body {
 
 /* ******************* HEADER *********************
  * Header with the "Portfolio" text
- * ************************************************
- */
+ * ************************************************/
 .header {
     padding: 20px;
     text-align: center;
@@ -21,8 +20,7 @@ body {
 
 /* ************ NAVIGATION BAR ********************
  * Top navigation links right underneath the header
- * ************************************************
- */
+ * ************************************************/
 .top-navigation {
     overflow: hidden;
     background-color: black;
@@ -42,5 +40,4 @@ body {
 /* ****************** PROJECTS ********************
  * Contains the various projects to showcase onto
  * the profile.
- * ************************************************
- */
+ * ************************************************/
