@@ -41,9 +41,10 @@ body {
  * Contains the various projects to showcase onto
  * the profile.
  * ************************************************/
+
  .main-column {
     float: left;
-    width: 50%;
+    width: 40%;
     padding: 15px;
  }
 
