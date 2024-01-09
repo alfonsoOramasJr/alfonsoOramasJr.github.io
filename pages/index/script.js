@@ -10,5 +10,13 @@ function setLinkTargetBasedOnView() {
     }
 }
 
+async function getProjectDescription(file, identifier){
+   let projectFileObject = await fetch(file);
+   let projectDescription = await projectFileObject.text();
+   document.getElementById(identifier).innerHTML = projectDescription;
+}
+
 // Calls the function when the page loads
+window.addEventListener("load", getProjectDescription("pages\\index\\public\\descriptions\\smart-home-automation.txt", "smart-home-automation-description"))
+window.addEventListener("load", getProjectDescription("pages\\index\\public\\descriptions\\vertical-landing-rocket.txt", "vertical-landing-rocket-description"))
 window.addEventListener("load", setLinkTargetBasedOnView);
