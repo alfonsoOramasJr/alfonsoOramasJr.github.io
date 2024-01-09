@@ -10,3 +10,7 @@ body {
 .header {
     display: flex;
 }
+.header-item{
+    padding: 5%;
+    
+}
