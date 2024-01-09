@@ -15,6 +15,10 @@ body {
     background-color: whitesmoke;
 }
 
+/* ************ NAVIGATION BAR ********************
+ * Top navigation links right underneath the header
+ * ************************************************
+ */
 .top-navigation {
     overflow: hidden;
     background-color: black;
