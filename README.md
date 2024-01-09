@@ -17,3 +17,9 @@ This section will contain information on the projects that we are working on, su
 vertical landing project, or the smart home automation project, and the tecnologies used.
 
 Note that there should be visuals, i.e. images in place to showcase some of the work.
+
+## Testing : Javascript
+For our continuous integration, we are testing the view port for mobile and desktop view, and checking whether or not those changes are detected on our tests.
+To do so, we need to create a package.json file for holding our dependencies for the test container that is being run by GitHub Actions.
+
+The Test folder contains the unit tests for our program.
