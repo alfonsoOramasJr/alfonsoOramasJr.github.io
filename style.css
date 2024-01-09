@@ -11,6 +11,10 @@ body {
 .header {
     padding: 20px;
     text-align: center;
+    
+    /* Adds a white header-bar with black text */
+    color: black;
+    background-color: whitesmoke;
 }
 
 .top-navigation-link {
