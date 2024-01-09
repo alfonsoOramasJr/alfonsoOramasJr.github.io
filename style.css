@@ -24,6 +24,12 @@ body {
 .top-navigation {
     overflow: hidden;
     background-color: black;
+
+    /* Makes it so that when the user scrolls down, the navigation
+     * bar is stuck at the top of the page */
+    position: -webkit-sticky; /* for Safari browser */
+    position: sticky;
+    top: 0;
 }
 .top-navigation-link {
     float: left;
@@ -34,7 +40,7 @@ body {
     text-align: center;
     padding: 14px 16px;
 
-    text-decoration: none; /* Removes the purple link underscore */    
+    text-decoration: none; /* Removes the purple link underscore */
 }
 .top-navigation-link:hover {
     background-color: white;
