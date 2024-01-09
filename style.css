@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+/* ******************* HEADER *********************
+ * Header with the "Portfolio" text
+ * ************************************************
+ */
 .header {
     padding: 20px;
     text-align: center;
