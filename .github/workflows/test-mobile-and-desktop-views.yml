@@ -1,4 +1,4 @@
-name: Test Mobile and Desktop Views
+name: test-mobile-and-desktop-views
 
 on: [push, pull_request]
 
