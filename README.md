@@ -12,18 +12,6 @@ Depending on your view port, i.e. if your on mobile or desktop, the navigation l
 
 This was made intentionally to work around the ":hover" caching for mobile web browsers where certain CSS event driven changes would be frozen on returning from a new tab. The following are examples of the bug,
 
-### Before opening the link
-
-![Before opening a link](https://github.com/alfonsoOramasJr/alfonsoOramasJr.github.io/assets/100045145/1c209163-119e-4961-a959-e9aff7382828)
-
-### Proof showing that a link has been opened
-
-![Proof showing a link opened](https://github.com/alfonsoOramasJr/alfonsoOramasJr.github.io/assets/100045145/39b1fae7-c455-42e3-b273-e2edf1ee1654)
-
-### Unintended bug
-
-![Unintended bug](https://github.com/alfonsoOramasJr/alfonsoOramasJr.github.io/assets/100045145/2c6e444b-4c7e-42e6-8b27-fa247b8e091c)
-
 ### Projects section
 This section will contain information on the projects that we are working on, such as the
 vertical landing project, or the smart home automation project, and the tecnologies used.
