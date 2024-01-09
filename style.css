@@ -41,9 +41,15 @@ body {
  * Contains the various projects to showcase onto
  * the profile.
  * ************************************************/
+ .side-column {
+    float: left;
+    width: 20%;
+    padding: 15px;
+ }
+
  .main-column {
     float: left;
-    width: 50%;
+    width: 40%;
     padding: 15px;
  }
 
@@ -56,7 +62,7 @@ body {
 
  /* Makes the different projects stack up on
     each other instead of next to each other */
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 700px) {
     .side-column, .main-column {
         width: 100%;
     }
