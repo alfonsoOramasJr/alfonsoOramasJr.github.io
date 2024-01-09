@@ -48,7 +48,7 @@ body {
  }
  .side-column-technologies {
     display: flex; /* So that it can be aligned on a single row */
-    padding: 10px 0px;
+    padding: 2px 0px;
  }
  .side-column-technology {
     margin-right: 5px;
