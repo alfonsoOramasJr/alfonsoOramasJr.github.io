@@ -17,6 +17,8 @@ jobs:
       uses: actions/github-script@v5
       with:
         script: |
+          console.log(JSON.stringify(context, null, 2)); // Log the entire context
+    
           const pr = await context.github.pulls.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
@@ -32,6 +34,8 @@ jobs:
       uses: actions/github-script@v5
       with:
         script: |
+          console.log(JSON.stringify(context, null, 2)); // Log the entire context
+    
           await context.github.pulls.merge({
             owner: context.repo.owner,
             repo: context.repo.repo,
