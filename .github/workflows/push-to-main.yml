@@ -9,43 +9,17 @@ jobs:
   merge_to_main:
     runs-on: ubuntu-latest
 
-    outputs:
-      steps: ${{ toJson(steps) }}
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Create Pull Request
       id: create_pr
-      uses: actions/github-script@v5
-      with:
-        script: |
-          const pr = await context.github.pulls.create({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            title: 'Merge development to main',
-            head: 'development',
-            base: 'main',
-            changes: [],
-          });
-
-          console.log(`Pull request created: ${pr.data.html_url}`);
-
-          // Set output for the next step
-          return { pull_request_number: pr.data.number };
+      run: |
+        pr=$(curl -X POST -H "Authorization: Bearer ${{ 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 }}" -d '{"head":"development","base":"main","title":"Merge development to main"}' https://api.github.com/repos/${{ github.repository }}/pulls)
+        echo "::set-output name=pull_request_number::$(echo $pr | jq -r '.number')"
 
     - name: Merge Pull Request
-      uses: actions/github-script@v5
-      with:
-        script: |
-          // Get the output from the previous step
-          const prNumber = parseInt(steps.create_pr.outputs.pull_request_number);
-
-          await context.github.pulls.merge({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            pull_number: prNumber,
-          });
-
-          console.log(`Pull request merged successfully.`);
+      run: |
+        prNumber=${{ steps.create_pr.outputs.pull_request_number }}
+        curl -X PUT -H "Authorization: Bearer ${{ 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 }}" "https://api.github.com/repos/${{ github.repository }}/pulls/${prNumber}/merge"
