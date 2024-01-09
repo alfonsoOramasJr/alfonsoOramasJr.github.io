@@ -34,9 +34,9 @@ jobs:
       uses: actions/github-script@v5
       with:
         script: |
-          const github = context.github;
+          const github2 = context.github;
 
-          await github.pulls.merge({
+          await github2.pulls.merge({
             owner: context.repo.owner,
             repo: context.repo.repo,
             pull_number: pr.data.number,
