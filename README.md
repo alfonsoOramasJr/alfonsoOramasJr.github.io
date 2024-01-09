@@ -20,6 +20,7 @@ Note that there should be visuals, i.e. images in place to showcase some of the 
 
 ## Testing : Javascript
 For our continuous integration, we are testing the view port for mobile and desktop view, and checking whether or not those changes are detected on our tests.
-To do so, we need to create a package.json file for holding our dependencies for the test container that is being run by GitHub Actions.
+
+To do so, we need to create a package.json file for holding our dependencies for the test container that is being run by GitHub Actions, and also for directing our GitHub Actions where the test will be located.
 
 The Test folder contains the unit tests for our program.
