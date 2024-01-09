@@ -46,7 +46,7 @@ body {
     width: 20%;
     padding: 15px;
  }
- .side-column-webdevelopment-technologies {
+ .side-column-technologies {
     display: flex; /* So that it can be aligned on a single row */
     padding: 10px 0px;
  }
