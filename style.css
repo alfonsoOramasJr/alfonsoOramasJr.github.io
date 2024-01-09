@@ -46,13 +46,24 @@ body {
     width: 20%;
     padding: 15px;
  }
+ .side-column-technologies {
+    display: flex; /* So that it can be aligned on a single row */
+    padding: 10px 0px;
+ }
+ .side-column-technology {
+    margin-right: 5px;
+ }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
  .main-column {
     float: left;
     width: 40%;
     padding: 15px;
  }
-
 /* Clear floats after the columns */
  .main-row::after {
     content: "";
