@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-left: 5%;
+    margin-right: 5%;
 }
 .name {
     /* Reduces the line spacing between the position/company */
