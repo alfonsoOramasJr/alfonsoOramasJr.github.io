@@ -13,7 +13,6 @@ body {
 /* Header CSS */
 .header-container {
     display: flex;
-    margin-right: 5%;
 }
 /* Adds spacing between the name/position from the profile picture */
 .header-right-side-container {
