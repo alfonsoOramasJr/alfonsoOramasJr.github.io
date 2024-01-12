@@ -13,7 +13,15 @@ body {
 .header-profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
     border-radius: 100%;
+
     width: 40%;
+    height: 40%;
+    /* Image is being warped on mobile view */
+    min-height: 40%;
+    min-width: 40%;
+    max-height: 40%;
+    max-width: 40%;
+
     float: left;
 }
 /* Adds spacing between the name/position from the profile picture */
