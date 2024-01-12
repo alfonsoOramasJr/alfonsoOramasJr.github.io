@@ -1,5 +1,42 @@
+body {
+    margin: 0;
+}
 .header-profile-picture {
     max-width: 200px;
     max-height: 200px;
     border-radius: 200px;
+    margin: 5%;
+    margin-right: 0;
+}
+
+/* Header CSS */
+.header-container {
+    display: flex;
+}
+/* Adds spacing between the name/position from the profile picture */
+.header-right-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+.name {
+    /* Reduces the line spacing between the position/company */
+    margin-bottom: 0;
+}
+
+.professional-position-container {
+    display: flex;
+}
+.position {
+    margin-right: 3%;
+    margin-top: 0;
+}
+/* Lines up with the position/company */
+.seperator {
+    margin-top: 0;
+}
+.company {
+    margin-left: 3%;
+    margin-top: 0;
 }
