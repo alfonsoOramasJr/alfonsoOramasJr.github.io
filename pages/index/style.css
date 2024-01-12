@@ -24,10 +24,9 @@ body {
     margin-left: 5%;
 }
 .name {
-    /* Reduces the line spacing between the position/company */
+    /* Reduces the vertical line spacing between the position/company */
     margin-bottom: 0;
 }
-
 .professional-position-container {
     display: flex;
 }
@@ -36,9 +35,9 @@ body {
     margin-top: 0;
 }
 .position {
-    margin-right: 3%;
+    margin-right: 1%;
 }
 .company {
-    margin-left: 3%;
+    margin-left: 1%;
     margin-right: 5%;
 }
