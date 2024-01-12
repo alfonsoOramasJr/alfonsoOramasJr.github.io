@@ -3,3 +3,24 @@
     max-height: 200px;
     border-radius: 200px;
 }
+
+/* Header CSS */
+.header-container {
+    display: flex;
+}
+/* Adds spacing between the name/position from the profile picture */
+.header-right-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+.professional-position-container {
+    display: flex;
+}
+.position {
+    margin-right: 5%;
+}
+.company {
+    margin-left: 5%;
+}
