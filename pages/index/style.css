@@ -2,7 +2,7 @@
     0% { opacity: 0;}
     100% {opacity: 1;}
 }
-/* Removes horizontal scrolling */
+/* Removes horizontal scrolling. */
 html, body {
     overflow-x: hidden;
 }
@@ -11,12 +11,12 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-/* Removes hyperlink highlights and default color */
+/* Removes hyperlink highlights and default color. */
 a {
     text-decoration: none;
     color: black;
 }
-/* On cursor hover, text becomes gray to show the user that it is a link */
+/* On cursor hover, text becomes gray to show the user that it is a link. */
 a:hover {
     color: gray;
 }
@@ -31,25 +31,25 @@ a:hover {
     margin-right: 7%;
 }
 .header > .profile-picture {
-    margin: 5%; /* Adds spacing between the edges of the website */
+    margin: 5%; /* Adds spacing between the edges of the website. */
     border-radius: 100%;
 
     width: 40%;
     height: 40%;
 
-    /* Sets a limit on the maximum height for the profile picture */
+    /* Sets a limit on the maximum height for the profile picture. */
     max-height: 355px;
     /* On mobile view this causes cutting into the website near the edges,
        going to leave it here since I think it looks neat. */
     width: auto;
 }
-/* Adds spacing between the name/position from the profile picture */
+/* Adds spacing between the name/position from the profile picture. */
 .header > .right-side-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-/* Removed margin so that the text would be grouped up closer together */
+/* Removed margin so that the text would be grouped up closer together. */
 .header > .right-side-container > .name {
     margin: 0;
 }
@@ -67,12 +67,12 @@ a:hover {
         display: flex;
         flex-direction: column;
 
-        /* Aligns the text && profile picture to the center of the of the screen */
+        /* Aligns the text && profile picture to the center of the of the screen. */
         align-items: center;
         text-align: center;
     }
     .header > .profile-picture {
-        /* To get more "cut-in" on larger devices */
+        /* To get more "cut-in" on larger devices. */
         max-height: 500px;
     }
     .header > .right-side-container > .name {
