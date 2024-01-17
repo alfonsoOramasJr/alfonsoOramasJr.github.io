@@ -29,7 +29,6 @@ a:hover {
     margin: 5%; /* Adds spacing between the edges of the website */
     border-radius: 100%;
 
-
     width: 40%;
     height: 40%;
 
@@ -38,6 +37,9 @@ a:hover {
     /* On mobile view this causes cutting into the website near the edges,
        going to leave it here since I think it looks neat. */
     width: auto;
+}
+.header > .profile-picture > img {
+    overflow: hidden;
 }
 /* Adds spacing between the name/position from the profile picture */
 .header > .right-side-container {
