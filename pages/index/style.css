@@ -20,6 +20,12 @@ body {
     }
 }
 /*  LINKS  */
+a {
+    /* Removes underline and default
+       purple color */
+    text-decoration: none;
+    color: black;
+}
 .header > .links .link:hover {
     background-color: rgb(206, 253, 111);
     border: 2px solid rgb(206, 253, 111);
@@ -34,4 +40,9 @@ body {
     border: 2px solid black;
     margin: 0 10px;
     padding: 0 1em;
+}
+@media only screen and (max-width: 600px){
+    .header > .links {
+        font-size: x-small;
+    }
 }
