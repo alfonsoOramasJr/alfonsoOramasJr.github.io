@@ -39,8 +39,10 @@ body {
         /* for fitting the font on the same row */
         font-size: large;
     }
-    .header-item {
+    .professional-position {
         font-size: medium;
+        justify-content: center;
+        margin: 0;
     }
     .direct-links {
         font-size: small;
@@ -51,18 +53,8 @@ body {
     /* Reduces the vertical line spacing between the position/company */
     margin-bottom: 0;
 }
-.professional-position-container {
+.professional-position {
     display: flex;
-}
-.header-item {
-    display: flex;
-    margin-top: 0;
-}
-.position {
-    margin-right: 2%;
-}
-.company {
-    margin-left: 2%;
 }
 a {
     text-decoration: none;
