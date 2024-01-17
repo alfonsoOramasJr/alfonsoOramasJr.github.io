@@ -10,7 +10,6 @@ body {
 .header-container {
     display: flex;
 }
-/**************** DESKTOP VIEW ***********************************/
 .header-profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
     border-radius: 100%;
@@ -18,6 +17,7 @@ body {
     width: 40%;
     height: 40%;
 }
+/**************** DESKTOP VIEW ***********************************/
 /* Adds spacing between the name/position from the profile picture */
 .header-right-side-container {
     width: 60%;
@@ -26,6 +26,27 @@ body {
     justify-content: center;
     margin-left: 5%;
 }
+/*************** MOBILE VIEW ************************************/
+@media only screen and (max-width: 600px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+    }
+    .header-right-side-container > .name {
+        /* for fitting the font on the same row */
+        font-size: large;
+    }
+    .header-item {
+        font-size: medium;
+    }
+    .direct-links {
+        font-size: small;
+    }
+}
+
 .name {
     /* Reduces the vertical line spacing between the position/company */
     margin-bottom: 0;
