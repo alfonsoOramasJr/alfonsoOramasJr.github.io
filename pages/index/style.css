@@ -10,6 +10,7 @@ body {
 .header-container {
     display: flex;
 }
+/**************** DESKTOP VIEW ***********************************/
 .header-profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
     border-radius: 100%;
