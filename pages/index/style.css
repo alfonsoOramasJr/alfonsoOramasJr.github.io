@@ -2,6 +2,7 @@
     0% { opacity: 0;}
     100% {opacity: 1;}
 }
+/* Removes horizontal scrolling */
 html, body {
     overflow-x: hidden;
 }
@@ -26,6 +27,8 @@ a:hover {
 /* *************** DESKTOP VIEW *********************************** */
 .header {
     display: flex;
+    justify-content: center;
+    margin-right: 7%;
 }
 .header > .profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
@@ -42,11 +45,9 @@ a:hover {
 }
 /* Adds spacing between the name/position from the profile picture */
 .header > .right-side-container {
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5%;
 }
 /* Removed margin so that the text would be grouped up closer together */
 .header > .right-side-container > .name {
@@ -75,11 +76,11 @@ a:hover {
         max-height: 500px;
     }
     .header > .right-side-container > .name {
-        font-size: large;
+        font-size: xx-large;
         margin: 0;
     }
     .header > .right-side-container > .professional-position {
-        font-size: large;
+        font-size: x-large;
         justify-content: center;
         margin: 0;
     }
@@ -94,4 +95,9 @@ a:hover {
 
 .projects > .introduction {
     text-align: center;
+}
+@media only screen and (max-width: 600px){
+    .projects > .introduction {
+        font-size: xx-large;
+    }
 }
