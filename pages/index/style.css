@@ -69,22 +69,3 @@ a:hover {
         font-size: large;
     }
 }
-
-/* ****************************************************************
-   ************** PROJETS SECTION *********************************
-   **************************************************************** */
-
-/* *************** DESKTOP VIEW *********************************** */
-.project {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.project > .top-container {
-    display: flex;
-    flex-direction: row;
-}
-.project > .top-container > .title-and-role {
-    margin-left: 5%;
-    text-align: center;
-}
