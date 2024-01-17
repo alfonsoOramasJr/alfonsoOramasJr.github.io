@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-
-    overflow-x: hidden;
+    /* Gets rid of horizontal-scrolling for desktop view */
+    overflow: hidden;
 }
 /* Removes hyperlink highlights and default color */
 a {
@@ -38,9 +38,6 @@ a:hover {
        going to leave it here since I think it looks neat. */
     width: auto;
 }
-.header > .profile-picture > img {
-    overflow: hidden;
-}
 /* Adds spacing between the name/position from the profile picture */
 .header > .right-side-container {
     width: 60%;
@@ -62,6 +59,11 @@ a:hover {
     animation: fadeIn 4s;
 }
 /* ************** MOBILE VIEW ************************************ */
+/* Gets rid of horizontal-scrolling for mobile view */
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
 @media only screen and (max-width: 600px) {
     .header {
         display: flex;
