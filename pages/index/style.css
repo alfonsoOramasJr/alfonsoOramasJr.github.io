@@ -38,14 +38,15 @@ body {
     .header-right-side-container > .name {
         /* for fitting the font on the same row */
         font-size: large;
+        margin: 0;
     }
-    .professional-position {
-        font-size: medium;
+    .header-right-side-container > .professional-position {
+        font-size: large;
         justify-content: center;
         margin: 0;
     }
-    .direct-links {
-        font-size: small;
+    .header-right-side-container > .direct-links {
+        font-size: large;
     }
 }
 
