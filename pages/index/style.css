@@ -13,6 +13,20 @@ body {
     width: 40%;
     height: 40%;
 }
+/* Removes hyperlink highlights and default color */
+a {
+    text-decoration: none;
+    color: black;
+}
+/* On cursor hover, text becomes gray to show the user that it is a link */
+a:hover {
+    color: gray;
+}
+
+/* ****************************************************************
+   ************** HEADER ******************************************
+   **************************************************************** */
+
 /**************** DESKTOP VIEW ***********************************/
 /* Adds spacing between the name/position from the profile picture */
 .header > .right-side-container {
@@ -56,10 +70,6 @@ body {
     }
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    color: gray;
-}
+/* ****************************************************************
+   ************** PROJETS SECTION *********************************
+   **************************************************************** */
