@@ -10,7 +10,7 @@ body {
 .header-container {
     display: flex;
 }
-.header-profile-picture {
+.header-container > .profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
     border-radius: 100%;
 
