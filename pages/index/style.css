@@ -66,6 +66,10 @@ a:hover {
         align-items: center;
         text-align: center;
     }
+    .header > .profile-picture {
+        /* To get more "cut-in" on larger devices */
+        max-height: 500px;
+    }
     .header > .right-side-container > .name {
         font-size: large;
         margin: 0;
