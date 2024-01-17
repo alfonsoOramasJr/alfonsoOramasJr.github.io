@@ -56,13 +56,6 @@ body {
     }
 }
 
-.name {
-    /* Reduces the vertical line spacing between the position/company */
-    margin-bottom: 0;
-}
-.professional-position {
-    display: flex;
-}
 a {
     text-decoration: none;
     color: black;
