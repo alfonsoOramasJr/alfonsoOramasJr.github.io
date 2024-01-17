@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+
+    overflow-x: hidden;
 }
 /* Removes hyperlink highlights and default color */
 a {
@@ -26,6 +28,7 @@ a:hover {
 .header > .profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
     border-radius: 100%;
+
 
     width: 40%;
     height: 40%;
