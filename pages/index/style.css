@@ -7,10 +7,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 /* Header CSS */
-.header-container {
+.header {
     display: flex;
 }
-.header-container > .profile-picture {
+.header > .profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
     border-radius: 100%;
 
@@ -19,7 +19,7 @@ body {
 }
 /**************** DESKTOP VIEW ***********************************/
 /* Adds spacing between the name/position from the profile picture */
-.header-right-side-container {
+.header > .right-side-container {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -27,18 +27,18 @@ body {
     margin-left: 5%;
 }
 /* Removed margin so that the text would be grouped up closer together */
-.header-right-side-container > .name {
+.header > .right-side-container > .name {
     margin: 0;
 }
-.header-right-side-container > .professional-position {
+.header > .right-side-container > .professional-position {
     margin: 0;
 }
-.header-right-side-container > .direct-links {
+.header > .right-side-container > .direct-links {
     font-size: large;
 }
 /*************** MOBILE VIEW ************************************/
 @media only screen and (max-width: 600px) {
-    .header-container {
+    .header {
         display: flex;
         flex-direction: column;
 
@@ -46,16 +46,16 @@ body {
         align-items: center;
         text-align: center;
     }
-    .header-right-side-container > .name {
+    .header > .right-side-container > .name {
         font-size: large;
         margin: 0;
     }
-    .header-right-side-container > .professional-position {
+    .header > .right-side-container > .professional-position {
         font-size: large;
         justify-content: center;
         margin: 0;
     }
-    .header-right-side-container > .direct-links {
+    .header > .right-side-container > .direct-links {
         font-size: large;
     }
 }
