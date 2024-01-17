@@ -8,8 +8,12 @@ body {
 
     font-family: 'Open Sans', sans-serif;
 }
-/* Header */
+
 .header {
+    display: flex;
+    justify-content: center;
+}
+.introduction {
     display: flex;
     justify-content: center;
 }
