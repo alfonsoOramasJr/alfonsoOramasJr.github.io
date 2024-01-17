@@ -76,11 +76,11 @@ a:hover {
         max-height: 500px;
     }
     .header > .right-side-container > .name {
-        font-size: large;
+        font-size: xx-large;
         margin: 0;
     }
     .header > .right-side-container > .professional-position {
-        font-size: large;
+        font-size: x-large;
         justify-content: center;
         margin: 0;
     }
