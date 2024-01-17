@@ -27,6 +27,8 @@ a:hover {
 /* *************** DESKTOP VIEW *********************************** */
 .header {
     display: flex;
+    justify-content: center;
+    margin-right: 7%;
 }
 .header > .profile-picture {
     margin: 5%; /* Adds spacing between the edges of the website */
@@ -43,11 +45,9 @@ a:hover {
 }
 /* Adds spacing between the name/position from the profile picture */
 .header > .right-side-container {
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5%;
 }
 /* Removed margin so that the text would be grouped up closer together */
 .header > .right-side-container > .name {
