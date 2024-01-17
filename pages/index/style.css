@@ -16,6 +16,8 @@ body {
 
     display: flex;
     justify-content: center;
+    /* Adds spacing from the website/pages */
+    margin: 5%;
 }
 .header > .introduction {
     z-index: 100;
@@ -24,7 +26,10 @@ body {
     /* Makes the profile picture in the background */
     z-index: -100;
     width: 200px;
+
+    /* Inherits the relative position of the (header) */
     position: absolute;
+    /* Rounds the image to a circle */
     border-radius: 100%;
 }
 .about {
