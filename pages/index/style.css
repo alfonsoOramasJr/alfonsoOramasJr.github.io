@@ -26,17 +26,24 @@ body {
     justify-content: center;
     margin-left: 5%;
 }
+/* Removed margin so that the text would be grouped up closer together */
+.header-right-side-container > .name {
+    margin-bottom: 0;
+}
+.header-right-side-container > .professional-position {
+    margin: 0;
+}
 /*************** MOBILE VIEW ************************************/
 @media only screen and (max-width: 600px) {
     .header-container {
         display: flex;
         flex-direction: column;
 
+        /* Aligns the text && profile picture to the center of the of the screen */
         align-items: center;
         text-align: center;
     }
     .header-right-side-container > .name {
-        /* for fitting the font on the same row */
         font-size: large;
         margin: 0;
     }
