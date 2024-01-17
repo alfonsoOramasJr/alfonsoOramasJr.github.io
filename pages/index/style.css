@@ -20,12 +20,3 @@ body {
         font-size: 1em;
     }
 }
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    /* Since I established this section as a column,
-       in order to center each project horizontally,
-       I would have to use the "align-items" css feature. */
-    align-items: center;
-}
