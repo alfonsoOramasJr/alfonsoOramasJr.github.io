@@ -59,7 +59,8 @@ a:hover {
 /* ************** MOBILE VIEW ************************************ */
 /* Gets rid of horizontal-scrolling for mobile view */
 body.modal-open {
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
 }
 @media only screen and (max-width: 600px) {
     .header {
