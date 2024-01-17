@@ -31,6 +31,8 @@ body {
     position: absolute;
     /* Rounds the image to a circle */
     border-radius: 100%;
+
+    left: 50%;
 }
 .about {
     display: flex;
