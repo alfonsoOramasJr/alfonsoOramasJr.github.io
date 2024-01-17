@@ -1,48 +1,5 @@
 body {
-    background-color: mediumaquamarine;
-}
-.header {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-}
-/*  NAME  */
-.header > .name {
-    font-size: 5em;
-
-    border: 2px solid black;
-    padding: 0px 10px;
-}
-@media only screen and (max-width: 600px) {
-    .header > .name {
-        font-size: 2em;
-    }
-}
-/*  LINKS  */
-a {
-    /* Removes underline and default
-       purple color */
-    text-decoration: none;
-    color: black;
-}
-.header > .links .link:hover {
-    background-color: rgb(206, 253, 111);
-    border: 2px solid rgb(206, 253, 111);
-}
-.header > .links {
-    font-size: 2em;
-
-    display: flex;
-    flex-direction: row;
-}
-.header > .links > .link {
-    border: 2px solid black;
-    margin: 0 10px;
-    padding: 0 1em;
-}
-@media only screen and (max-width: 600px){
-    .header > .links {
-        font-size: x-small;
-    }
+    background-color: black;
+    /* Font color is white */
+    color: white;
 }
