@@ -27,7 +27,7 @@ a:hover {
    ************** HEADER ******************************************
    **************************************************************** */
 
-/**************** DESKTOP VIEW ***********************************/
+/* *************** DESKTOP VIEW *********************************** */
 /* Adds spacing between the name/position from the profile picture */
 .header > .right-side-container {
     width: 60%;
@@ -46,7 +46,7 @@ a:hover {
 .header > .right-side-container > .direct-links {
     font-size: large;
 }
-/*************** MOBILE VIEW ************************************/
+/* ************** MOBILE VIEW ************************************ */
 @media only screen and (max-width: 600px) {
     .header {
         display: flex;
@@ -73,3 +73,35 @@ a:hover {
 /* ****************************************************************
    ************** PROJETS SECTION *********************************
    **************************************************************** */
+
+/* *************** DESKTOP VIEW *********************************** */
+.project {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.project > .top-container, .project > .bottom-container {
+display: flex;
+flex-direction: row;
+/* Adds spacing from the edges of the page */
+margin: 5%;
+}
+.project > .top-container > .media, .project > .bottom-container > .media {
+    width: 50%;
+    height: 50%;
+
+    overflow: hidden;
+    border: solid lightgray;
+}
+.project > .top-container > .title-and-role {
+    width: 50%;
+    height: 50%;
+    /* Centers the title/role text inside its flex box container */
+    text-align: center;
+}
+
+.project > .bottom-container > .skills {
+    width: 50%;
+    height: 50%;
+}
