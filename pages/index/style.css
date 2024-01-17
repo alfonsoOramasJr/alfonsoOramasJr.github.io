@@ -80,28 +80,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-
-.project > .top-container, .project > .bottom-container {
-display: flex;
-flex-direction: row;
-/* Adds spacing from the edges of the page */
-margin: 5%;
-}
-.project > .top-container > .media, .project > .bottom-container > .media {
-    width: 50%;
-    height: 50%;
-
-    overflow: hidden;
-    border: solid lightgray;
+.project > .top-container {
+    display: flex;
+    flex-direction: row;
 }
 .project > .top-container > .title-and-role {
-    width: 50%;
-    height: 50%;
-    /* Centers the title/role text inside its flex box container */
+    margin-left: 5%;
     text-align: center;
-}
-
-.project > .bottom-container > .skills {
-    width: 50%;
-    height: 50%;
 }
