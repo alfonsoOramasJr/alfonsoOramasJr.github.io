@@ -98,6 +98,6 @@ a:hover {
 }
 @media only screen and (max-width: 600px){
     .projects > .introduction {
-        font-size: large;
+        font-size: xx-large;
     }
 }
