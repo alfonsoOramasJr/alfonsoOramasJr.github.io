@@ -5,8 +5,6 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    /* Gets rid of horizontal-scrolling for desktop view */
-    overflow-x: hidden;
 }
 /* Removes hyperlink highlights and default color */
 a {
