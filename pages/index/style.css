@@ -47,7 +47,7 @@ body {
     /* Centers the project containers. */
     align-items: center;
 }
-.project-container {
+.projects {
     display: flex;
     flex-direction: column;
 
@@ -56,6 +56,6 @@ body {
 
     height: 30em;
 }
-.project-container > .title {
+.project > .title {
     font-size: xx-large;
 }
