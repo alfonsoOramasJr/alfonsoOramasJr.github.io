@@ -1,5 +1,12 @@
+@keyframes fadeInPage {
+    0% { opacity: 0; }
+    100% {opacity: 1;}
+}
 body {
-    background-color: mediumaquamarine;
+    background-color: black;
+    color: white;
+
+    animation: fadeInPage 1.2s;
 }
 .header {
     display: flex;
@@ -10,11 +17,16 @@ body {
 .header > .name {
     font-size: 5em;
 
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 10px;
 }
 @media only screen and (max-width: 600px) {
     .header > .name {
         font-size: 2em;
     }
+}
+
+.disclaimer {
+    display: flex;
+    justify-content: center;
 }
