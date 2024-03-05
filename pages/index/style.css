@@ -1,12 +1,22 @@
-@keyframes fadeInPage {
+@keyframes fadeIn {
     0% { opacity: 0; }
     100% {opacity: 1;}
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        background-color: black; /* Initial and final background color */
+        color: white; /* Initial and final text color */
+    }
+    50% {
+        background-color: white; /* Background color for fade out */
+        color: black; /* Text color for fade out */
+    }
 }
 body {
     background-color: black;
     color: white;
 
-    animation: fadeInPage 1.2s;
+    animation: fadeIn 1.2s;
 }
 .header {
     display: flex;
@@ -25,8 +35,40 @@ body {
         font-size: 2em;
     }
 }
+.disclaimer-container {
+    display: flex;
+    justify-content: center;
+    max-width: 80%; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
 
 .disclaimer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    animation: fadeInOut 10s infinite; /* Apply the fade in and out animation */
+    width: fit-content; /* Set width to fit content */
+}
+
+
+.project-containers {
+    display: flex;
+    flex-direction: column;
+
+    /* Centers the project containers. */
+    align-items: center;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid white;
+    padding: 1em;
+
+    height: 30em;
+}
+.project-container > .title {
+    font-size: xx-large;
 }
