@@ -35,23 +35,10 @@ body {
         font-size: 2em;
     }
 }
-.disclaimer-container {
-    display: flex;
-    justify-content: center;
-    max-width: 80%; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
 .disclaimer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    animation: fadeInOut 10s infinite; /* Apply the fade in and out animation */
-    width: fit-content; /* Set width to fit content */
 }
-
 
 .project-containers {
     display: flex;
